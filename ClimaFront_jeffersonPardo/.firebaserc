@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "defineme-bca4e": {
+      "hosting": {
+        "tableroUnificadoCifras": [
+          "defineme-bca4e"
+        ]
+      }
+    }
+  }
+}

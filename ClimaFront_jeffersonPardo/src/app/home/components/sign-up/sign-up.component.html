@@ -1,0 +1,52 @@
+
+<div class="sign-up-wrap">
+
+    <form [formGroup]= "login_form" (ngSubmit)="login($event)">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>
+                    Registrese para entrar
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-xs">
+                        <mat-form-field>
+                            <input placeholder="Email" formControlName = "email" matInput type="text">
+                        </mat-form-field>
+                        <div *ngIf="emailField.errors && emailField.dirty">
+                            <p *ngIf="emailField.hasError('required')">Este campo es requerido</p>
+                            <p *ngIf="emailField.hasError('email')">Ingrese un correo valido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs">
+                        <!--
+                            <mat-form-field>
+                                <input placeholder="Password" formControlName = "password" matInput type="text">
+                            </mat-form-field>
+                        -->
+                        <mat-form-field appearance="fill">
+                            <mat-label>Enter your password</mat-label>
+                            <input placeholder="Password" formControlName = "password" matInput [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+    
+                        <div *ngIf="passwordField.errors && passwordField.dirty">
+                            <p *ngIf="passwordField.hasError('required')">Este campo es requerido</p>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button [disabled]="login_form.invalid" mat-raised-button type="submit">
+                    iniciar sesion
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+
+</div>

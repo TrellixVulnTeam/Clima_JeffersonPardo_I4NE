@@ -1,0 +1,30 @@
+.grid-clima
+{
+    display: grid;
+    grid-template-columns: 1 1fr;
+    gap: 1rem;
+}
+
+.datos-wrap
+{
+    padding: 2rem;
+}
+
+.clima-title
+{
+    padding: 2rem 4rem 0.5rem 4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+@media(min-width: 1058px)
+{
+    
+    .grid-clima{
+        display: grid;
+        grid-template-columns: min(100%,25rem) 1fr;
+        gap: 1rem;
+        padding: 1em 2em;
+    }
+}
