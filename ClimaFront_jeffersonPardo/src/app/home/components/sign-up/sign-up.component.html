@@ -1,7 +1,7 @@
 
 <div class="sign-up-wrap">
 
-    <form [formGroup]= "login_form" (ngSubmit)="login($event)">
+    <form [formGroup]= "sing_up_form" (ngSubmit)="register($event)">
         <mat-card>
             <mat-card-header>
                 <mat-card-title>
@@ -42,8 +42,8 @@
                 </div>
             </mat-card-content>
             <mat-card-actions>
-                <button [disabled]="login_form.invalid" mat-raised-button type="submit">
-                    iniciar sesion
+                <button [disabled]="sing_up_form.invalid" mat-raised-button type="submit">
+                    Registrarse
                 </button>
             </mat-card-actions>
         </mat-card>
