@@ -9,8 +9,6 @@ import { ListarDatosClimaComponent } from './components/listar-datos-clima/lista
 import { MaterialModule } from '../material/material.module';
 import { EditarDatosClimaComponent } from './components/editar-datos-clima/editar-datos-clima.component';
 
-
-
 @NgModule({
   declarations: [IndexComponent, AgregarDatosClimaComponent, ListarDatosClimaComponent, EditarDatosClimaComponent],
   imports: [

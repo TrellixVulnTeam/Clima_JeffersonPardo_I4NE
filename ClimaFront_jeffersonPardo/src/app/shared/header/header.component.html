@@ -1,11 +1,20 @@
 <div class="clima-nav">
-    <a class="logo" routerLink ="/home">
+    <a class="logo" routerLink ="/clima">
         Clima
     </a>
+    <!--
     <div class="cerrar-sesion">
         Cerrar Sesión
         <mat-icon class="c-ico">
          highlight_off
         </mat-icon>
     </div>
+    -->
+    <button  mat-raised-button class="cerrar-sesion" (click)="CerrarSesion()">
+        Cerrar Sesión
+        <mat-icon class="c-ico">
+         highlight_off
+        </mat-icon>
+    </button>
+
 </div>

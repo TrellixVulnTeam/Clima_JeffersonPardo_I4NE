@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
+import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
 import { LayoutComponent } from './layout/layout.component';
-
+import { AuthGuard } from './guards/auth.guard'
 
 const routes: Routes = [
 
@@ -21,6 +22,7 @@ const routes: Routes = [
         },
         {
           path: 'clima',
+          canActivate: [AuthGuard],
           loadChildren: () => import ('./clima/clima.module').then (m => m.ClimaModule)
         }
       ]
