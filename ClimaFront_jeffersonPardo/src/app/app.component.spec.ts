@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tableroUnificadoCifras'`, () => {
+  it(`should have as title 'ClimaFront_jeffersonPardo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tableroUnificadoCifras');
+    expect(app.title).toEqual('ClimaFront_jeffersonPardo');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('tableroUnificadoCifras app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ClimaFront_jeffersonPardo app is running!');
   });
 });

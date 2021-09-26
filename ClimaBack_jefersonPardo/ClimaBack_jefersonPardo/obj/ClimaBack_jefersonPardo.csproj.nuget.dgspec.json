@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Prueba_global\\presentacion\\PruebaGlobal\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj": {}
+    "D:\\Prueba_global\\Clima_JeffersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj": {}
   },
   "projects": {
-    "D:\\Prueba_global\\presentacion\\PruebaGlobal\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj": {
+    "D:\\Prueba_global\\Clima_JeffersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Prueba_global\\presentacion\\PruebaGlobal\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj",
+        "projectUniqueName": "D:\\Prueba_global\\Clima_JeffersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj",
         "projectName": "ClimaBack_jefersonPardo",
-        "projectPath": "D:\\Prueba_global\\presentacion\\PruebaGlobal\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj",
+        "projectPath": "D:\\Prueba_global\\Clima_JeffersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj",
         "packagesPath": "C:\\Users\\jeffe\\.nuget\\packages\\",
-        "outputPath": "D:\\Prueba_global\\presentacion\\PruebaGlobal\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\obj\\",
+        "outputPath": "D:\\Prueba_global\\Clima_JeffersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeffe\\AppData\\Roaming\\NuGet\\NuGet.Config",

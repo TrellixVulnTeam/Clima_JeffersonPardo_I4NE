@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "si9+/ouoANteklMnQkH0IKe6e/nM5iW200Gp219AtEV0IVJRs7WVZXKaluPHIPdnRwIc5FgdTyeI3ZQHBpOdig==",
+  "dgSpecHash": "7Chx4DxZoG1KEajn8qvczpf8ggfVHoLjv90Fswhg32fikcqUV9Yd55UAusjemymSpDdKE1CKBOGLR1XGMgs+Nw==",
   "success": true,
-  "projectFilePath": "D:\\Prueba_global\\presentacion\\PruebaGlobal\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj",
+  "projectFilePath": "D:\\Prueba_global\\Clima_JeffersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo\\ClimaBack_jefersonPardo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jeffe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jeffe\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -2,10 +2,13 @@
   "targets": {
     "defineme-bca4e": {
       "hosting": {
-        "tableroUnificadoCifras": [
+        "ClimaFront_jeffersonPardo": [
           "defineme-bca4e"
         ]
       }
     }
+  },
+  "projects": {
+    "default": "global-prueba-jefferson-pardo"
   }
 }
