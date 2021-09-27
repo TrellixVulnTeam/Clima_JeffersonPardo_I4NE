@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 import { AuthService } from '../../core/services/auth.service';
 
@@ -10,9 +11,12 @@ import { AuthService } from '../../core/services/auth.service';
 })
 export class HeaderComponent implements OnInit {
 
+  hasUser = false;
+
   constructor(
     private auth:AuthService,
-    private router:Router
+    private router:Router,
+    public fireAuth: AngularFireAuth
   ) { }
 
   ngOnInit(): void {
@@ -24,7 +28,6 @@ export class HeaderComponent implements OnInit {
     .then(() => {
       this.router.navigate(['./home']);
     })
-    
   }
 
 }
