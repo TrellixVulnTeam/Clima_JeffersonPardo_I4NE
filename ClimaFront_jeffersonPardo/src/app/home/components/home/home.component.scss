@@ -1,0 +1,38 @@
+.hola-home
+{
+    padding: 1rem 16%;
+    font-size: 1rem;
+}
+
+.hola-tit
+{
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.hola-sutit
+{
+    font-style: oblique;
+}
+
+.ver-crud
+{
+    padding: 1em 0;
+}
+
+@media(min-width: 500px)
+{
+    .hola-home
+    {
+        padding: 2rem 4rem;
+        font-size: 2rem;
+    }
+
+    .ver-crud
+{
+    padding: 1.5em 0;
+    text-align: right;
+}
+
+}

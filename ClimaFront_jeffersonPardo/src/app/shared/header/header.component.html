@@ -1,9 +1,16 @@
 <div class="clima-nav">
-    <a class="logo" routerLink ="/clima">
-        Clima
-    </a>
+    
+
+    <nav>
+        <a class="logo" routerLink ="/home">
+            Home
+        </a>
+        <a class="logoC" routerLink ="/clima">
+            Clima
+        </a>
+    </nav>
    
-    <div *ngIf = "fireAuth.user | async" >
+    <div class="cerrar-sesion-wrap" *ngIf = "fireAuth.user | async" >
         <button  mat-raised-button class="cerrar-sesion" (click)="CerrarSesion()">
             Cerrar Sesión
             <mat-icon class="c-ico">

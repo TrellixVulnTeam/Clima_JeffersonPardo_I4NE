@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
     alert ('Se cerrará la sesión');
     this.auth.logout()
     .then(() => {
-      this.router.navigate(['./home']);
+      this.router.navigate(['./home/login']);
     })
   }
 

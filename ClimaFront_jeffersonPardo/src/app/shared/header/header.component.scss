@@ -1,26 +1,50 @@
 .clima-nav
 {
-    padding: 1.3rem 3rem;
+    padding: 0.5rem 8%;
     background: rgb(129,23,118);
     background: linear-gradient(90deg, rgba(129,23,118,1) 0%, rgba(90,80,159,1) 48%, rgba(0,212,255,1) 100%);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
 }
 
 .logo
 {
     color: white;
-    font-size: 2rem;
+    font-size: 4vw;
     font-weight: bold;
     display: block;
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 0.5rem 8%;
+    border: 0px solid white;
+    border-right-width: 2px;
 }
 
+.logoC
+{
+    color: white;
+    font-size: 4vw;
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 8%;
+}
+
+.logoC:hover,
 .logo:hover
 {
     background: rgb(129,23,118);
+}
+
+.cerrar-sesion-wrap
+{
+    padding: 0 8%;
 }
 
 .cerrar-sesion
@@ -29,10 +53,51 @@
     justify-content: center;
     align-items: center;
     background-color: #fcff00de;
+    padding: 0.2rem 8%;
+    border-radius: 0.2rem;
+    font-size: 4vw;
+    .c-ico
+    {
+        margin-left: 0.1rem;
+    }
+}
+
+
+@media(min-width: 500px)
+{
+    .clima-nav
+    {
+        padding: 1.3rem 3rem;
+        justify-content: space-between;
+    }
+
+.logo
+{
+
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.logoC
+{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.cerrar-sesion-wrap
+{
+    padding: 0;
+}
+
+.cerrar-sesion
+{
     padding: 0.5rem;
     border-radius: 0.5rem;
+    font-size: 1rem;
     .c-ico
     {
         margin-left: 0.2rem;
     }
+}
+    
 }
