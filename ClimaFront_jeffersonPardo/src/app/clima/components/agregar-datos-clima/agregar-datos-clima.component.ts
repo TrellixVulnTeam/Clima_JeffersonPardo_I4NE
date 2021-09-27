@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { ClimaService } from '../../../core/services/clima.service';
+import { MyValidators } from '../../../utils/validators';
 
 @Component({
   selector: 'app-agregar-datos-clima',
@@ -29,8 +30,8 @@ export class AgregarDatosClimaComponent implements OnInit {
     this.formulario = this.formBuilder.group({
     //  idClima: [''],
       fecha:[Date, [Validators.required]],
-      temperatura: [0, [Validators.required]],
-      humedad: [0, [Validators.required]]
+      temperatura: [0, [Validators.required,MyValidators.validacionTemperatura]],
+      humedad: [0, [Validators.required,MyValidators.validacionHumedad]]
     
     });
   }
@@ -51,5 +52,12 @@ export class AgregarDatosClimaComponent implements OnInit {
 
   }
 
+  get priceTemperatura() {
+    return this.formulario.get('temperatura');
+  }
+
+  get priceHumedad() {
+    return this.formulario.get('humedad');
+  }
 
 }

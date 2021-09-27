@@ -33,10 +33,10 @@
                             <input placeholder="temperatura" formControlName = "temperatura" matInput type="number">
                         </mat-form-field>
                        
-                       <!--<div *ngIf="priceField.errors && priceField.dirty">
-                            <p *ngIf="priceField.hasError('price_invalid')">no te debes pasar de 10000</p>
-                            <p *ngIf="priceField.hasError('required')">Este campo es requerido</p>
-                        </div>-->
+                        <div class='errores-campo' *ngIf="priceTemperatura.errors && priceTemperatura.dirty">
+                            <p *ngIf="priceTemperatura.hasError('temperatura_invalido')">No debe ser mayor a 100 ni menor a -100</p>
+                            <p *ngIf="priceTemperatura.hasError('required')">Este campo es requerido</p>
+                        </div>
                     </div>
                 </div>
     
@@ -45,10 +45,10 @@
                         <mat-form-field>
                             <input placeholder="humedad" formControlName = "humedad" matInput type="number">
                         </mat-form-field>
-                       <!--<div *ngIf="priceField.errors && priceField.dirty">
-                            <p *ngIf="priceField.hasError('price_invalid')">no te debes pasar de 10000</p>
-                            <p *ngIf="priceField.hasError('required')">Este campo es requerido</p>
-                        </div>-->
+                        <div class='errores-campo' *ngIf="priceHumedad.errors && priceHumedad.dirty">
+                            <p *ngIf="priceHumedad.hasError('Humedad_invalido')">No debe ser mayor a 100 ni menor a 0</p>
+                            <p *ngIf="priceHumedad.hasError('required')">Este campo es requerido</p>
+                        </div>
                     </div>
                 </div>
                

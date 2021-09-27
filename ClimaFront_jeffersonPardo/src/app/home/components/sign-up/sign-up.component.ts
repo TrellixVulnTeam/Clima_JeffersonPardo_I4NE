@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { AuthService } from '../../../core/services/auth.service';
-
+import { MyValidators } from '../../../utils/validators';
 
 @Component({
   selector: 'app-sign-up',
@@ -29,12 +29,12 @@ export class SignUpComponent implements OnInit {
   private buildForm() {
     this.sing_up_form = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]]
+      password: ['', [Validators.required, MyValidators.validacionContrasena]]
     });
   }
 
   register (event: Event){
-    /*event.preventDefault();
+    event.preventDefault();
     if(this.sing_up_form.valid){
      const value = this.sing_up_form.value;
      this.authService.createUser(value.email, value.password)
@@ -42,7 +42,7 @@ export class SignUpComponent implements OnInit {
        this.router.navigate(['./home']);
      } )
      ;
-    }*/
+    }
     console.log(this.sing_up_form.value);
 
   }
